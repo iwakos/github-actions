@@ -9,8 +9,9 @@ jobs:
       - name: install node
         uses: actions/setup-node@v3
         with:
-          node-version: 19
+          node-version: 18
       - name: Install dependencies
+        run: npm clean-install
         run: npm ci
       - name: Run tests
         run: npm test
