@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: echo "hello"
       - name: Run tests
-        run: npm test
+        run: echo "hello!"
   deploy:
     runs-on: ubuntu-latest
     needs: test
@@ -27,4 +27,4 @@ jobs:
       - name: Install dependencies
         run: echo "hello2"
       - name: Run tests
-        run: npm test
+        run: echo "hello2"
